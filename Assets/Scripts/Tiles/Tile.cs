@@ -42,6 +42,7 @@ public class Tile : MonoBehaviour
         {
             bool isSuccessfull = tower.CreateTower(tower, transform.position);
             gridManager.BlockNode(coordinates);
+            pathFinder.NotifyRecievers();
         }
     }
 }

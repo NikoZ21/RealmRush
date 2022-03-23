@@ -24,7 +24,7 @@ public class DisplayCoordinats : MonoBehaviour
     void Awake()
     {
         label = GetComponent<TextMeshPro>();
-        label.enabled = true;
+        label.enabled = false;
         gridManager = FindObjectOfType<GridManager>();
         DisplayCoordinatsss();
     }

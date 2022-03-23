@@ -43,8 +43,8 @@ public class ObjectPool : MonoBehaviour
     {
         while (true)
         {
-            EnableObjectInPool();
             yield return new WaitForSeconds(spawnTimer);
+            EnableObjectInPool();
         }
     }
 

@@ -171,7 +171,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6531717314971638492}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
   m_Name: 
@@ -270,7 +270,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
   blockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  label: {fileID: 6531717314971638494}
+  exploredColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  pathColor: {r: 0.007228212, g: 0, b: 0.7490196, a: 0}
 --- !u!1 &6531717316190697630
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,8 +281,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6531717316190697617}
-  - component: {fileID: 7392135404442484842}
   - component: {fileID: 434167591004498927}
+  - component: {fileID: 7762083245068190163}
   m_Layer: 0
   m_Name: Grass
   m_TagString: Untagged
@@ -306,20 +307,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7392135404442484842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6531717316190697630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d6b909c326db9e42acbeae2ba5aa2b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tower: {fileID: -3971553717139324554, guid: 8a965e088bae16643aab3d07ccfd5e2e, type: 3}
-  isPlaceable: 1
 --- !u!65 &434167591004498927
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -333,3 +320,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 0.59732306, z: 10}
   m_Center: {x: 0, y: -0.29866153, z: 0}
+--- !u!114 &7762083245068190163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6531717316190697630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3bbabe324868644bf0d822baf3f860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tower: {fileID: -3971553717139324554, guid: 8a965e088bae16643aab3d07ccfd5e2e, type: 3}
+  isPlaceable: 1
